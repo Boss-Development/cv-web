@@ -1,80 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Boss Man</title>
-    <link rel="stylesheet"  href="css/styles.css">
-    <link rel="icon" href="images/icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wicked RP Community</title>
+
+  <!-- Google Fonts (Montserrat, Ubuntu)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom title icon -->
+  <link rel="icon" href="https://wickedrp.com/wp-content/uploads/2020/04/cropped-newLogo-1.png">
+
+  <!-- Stylesheets (Bootsrtap first)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/d5d888400d.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Js Links-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
 </head>
+
 <body>
-    <div class="top-container">
-        <!-- tag defines a division or a section -->
-        <img class="cloud-top" src="images/cloud.png" alt="cloud-image-1">
-
-        <h1>I'm Boss Man.</h1>
-        <h2>
-            <p>a <span class="pro">pro</span>grammer.</p>
-        </h2>
-
-        <img class="cloud-bottom" src="images/cloud.png" alt="cloud-image-2">
-        <img src="images/mountain.png" alt="mountain-image">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5f5f5f;">
+    <div class="container-fluid ms-5">
+      <a class="navbar-brand" href="#">Wicked Rp</a>
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <div class="middle-container">
-        <div class="profile">
-            <img src="images/icon.png" alt="profile_image">
-            <h2>Hello.</h2>
-            <p class="intro">
-                I am a Programmer and Web Developer. I bring Websites and programs to life.
-            </p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            
-            <div class="skill-row">
-                <img class="code-icon" src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="codding-icon">
-                <h3>Design & Development</h3>
-                <p>
-                    My ability to imagine how something will look after it is moved around or 
-                    when its parts are moved or rearranged is something that takes time to learn.
-                </p>
-            </div>
-
-            <div class="skill-row">
-                <img class="IT-icon" src="images/IT-icon.png" alt="IT-icon">
-                <h3>IT Support & Repair</h3>
-                <p>
-                    Seamlessly maintain, update and repair any IT-related issues 
-                    such as network setup, database management, cloud computing is what we do. 
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>Got an idea for a website or have a question.</h3>
-            <p class="contact-message">
-                Do you want a eye-popping website reated? 
-                Dont know where to start? Let's talk and bring it to light!
-            </p>
-            <a class="btn" href="mailto:boss.man.development@gmail.com">CONTACT ME</a>
-        </div>
+    <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-3">
+          <a class="nav-link" href="https://wickedrp.com/discord">Discord</a>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Games
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://wickedrp.com/fivem/">FiveM</a></li>
+            <li><a class="dropdown-item" href="https://wickedrp.com/ats/">American Truck Simulator</a></li>
+            <li><a class="dropdown-item" href="https://wickedrp.com/sot/">Sea of Thieves</a></li>
+            <li><a class="dropdown-item" href="https://wickedrp.com/ark/">ARK: Survival Evolved</a></li>
+          </ul>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#staff">Staff</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="https://wickedrp.com/shop/">Shop</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://github.com/Boss-Development">Github</a>
-        <!-- <a class="footer-link" href="https://twitter.com/">Twitter</a> -->
-        <a class="footer-link" href="https://fivem.net/">FiveM</a>
-        <p class="copyright">
-            © 2018 Boss Man.
+  <Section id="title">
+    <div class="container">
+      <h1 class="big-heading">Welcome to Wicked RP!</h1>
+      <div class="mx-auto">
+        <p>
+          The official website for the Wicked Rp Gaming Community!
         </p>
+        <button type="button" class="btn btn-dark btn-lg shadow anim">
+          Join Today
+        </button>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="about">
+    <div class="container py-3">
+      <div class="row justify-content-md-center text-LEFT">
+        <div class="col col-lg-6 mt-4">
+          <h1 class="title-heading border-bottom mb-4"> Who We Are</h1>
+          <p class="mt-4">
+            Wicked RP is a gaming community started by 2 close friends. 
+            Wanting a place to hang out an play some games together, Sharky and Jolk started a FiveM server. 
+            Sharky’s knowledge in IT and server hosting & management and Jolk’s knowledge in media creation 
+            helped make the community what it is today.
+          </p>
+          <p class="mt-4">
+            The 2 started on the FiveM platform for GTA V but have plans to expand to other games in the future, 
+            such as Space Engineers, Satisfactory, American Truck Simulator, and much more.
+          </p>
+          <button type="button" class="btn btn-dark btn-lg mt-4 shadow anim">
+            JOIN THE WICKED COMMUNITY
+          </button>
+        </div>
+        <div class="col col-lg-6 d-none d-lg-block">
+          <img src="https://wickedrp.com/wp-content/uploads/2020/04/cropped-newLogo-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="services">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-6 d-none d-lg-block" style="overflow: hidden;">
+          <div class="col col-lg-3 d-none d-lg-block">
+            <img class="prov-img" src="https://wickedrp.com/wp-content/uploads/2021/07/charger_red.png" alt="">
+          </div>
+        </div>
+        <div class="col col-lg-6 px-5 pt-5">
+          <h1 class="title-heading border-bottom mb-4">What We Provide</h1>
+          <p class="mt-4">
+            We currently only offer a FiveM RP server but plan to branch out to more games down the line. 
+            Feel free to check out our servers.
+          </p>
+          <div class="row">
+            <div class="col col-lg-3 mt-3 d-none d-lg-block">
+              <img class="img-fluid pt-3" src="http://destinyrp.net/wp-content/uploads/2020/09/fivem-logo.png" alt="">
+            </div>
+            <div class="col col-lg-9">
+              <h2>FiveM - Wicked Life RP</h2>
+              <p class="px-2">
+                Built on the latest version of the vRP framework, we offer a server that focus on realism. 
+                You can live the life of a normal Civilian with the multiple jobs to choose from, 
+                or live the life as a Criminal and build an underground empire. There are also opportunities to become 
+                a Law Enforcement Officer, Firefighter, Paramedic, or even a Emergency Dispatcher.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-4">
+      <div class="row">
+        <div class="col col-lg-7">
+          <h1 class="title-heading border-bottom mb-4">What We Play</h1>
+          <p class="mt-4">
+            We currently play multiple games with the community. These games include, 
+            but are not limited to, FiveM, Sea of Thieves, American Truck Sim, ARK: Survival 
+            Evolved, and Farming Sim 19. We have dedicated groups/companies for FiveM and ATS 
+            with opportunities to manage your own group inside of the Wicked RP Gaming Community.
+          </p>
+          <div class="container">
+<!-- ########################################## -->
+            <!-- FiveM -->
+            <div class="row py-2">
+              <div class="col col-2 d-none d-sm-block">
+                <img class="img-fluid pt-3 pe-4 " src="http://destinyrp.net/wp-content/uploads/2020/09/fivem-logo.png" alt="">
+              </div>
+              <div class="col col-10">
+                <h3>FiveM - Wicked Life RP</h3>
+                <p>
+                  Built on the latest version of the vRP framework, we offer a server that focus on realism. 
+                  You can live the life of a normal Civilian with the multiple jobs to choose from, or live the 
+                  life as a Criminal and build an underground empire. There are also opportunities to become a 
+                  Law Enforcement Officer, Firefighter, Paramedic, or even a Emergency Dispatcher.
+                </p>
+              </div>
+            </div>
+<!-- ########################################## -->
+            <!-- American Trucking Simulator - Wicked Logistics -->
+            <div class="row py-2">
+              <div class="col col-2 d-none d-sm-block">
+                <img class="img-fluid pt-3 pe-4" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/8939caba-2c60-4aeb-bb20-d61b0458b178/d9q9se4-01a08bba-28ff-4183-b896-b92b7c1c9170.png" alt="">
+              </div>
+              <div class="col col-10">
+                <h3>American Trucking Simulator - Wicked Logistics</h3>
+                <p>
+                  Managed via TrucksBooks, Wicked Logistics was started at the beginning of July 2021. We offer a wide range of 
+                  fun from living the life as a Truck Driver to the clerical life of a Truck Company manger. To find out more about 
+                  the Wicked Logistics Company, please join our discord server.
+                </p>
+              </div>
+            </div>
+<!-- ########################################## -->
+            <!-- Sea of Thieves -->
+            <div class="row py-2">
+              <div class="col col-2 d-none d-sm-block">
+                <img class="img-fluid rounded-pill" src="https://store-images.s-microsoft.com/image/apps.16347.14554784103656548.6c0bfca6-ceff-4368-9bde-2fe50f344136.007dce43-6492-46f2-bb2b-2b28df98fc3c?w=180&h=270&q=60" alt="">
+              </div>
+              <div class="col col-10">
+                <h3>Sea of Thieves</h3>
+                <p>
+                  Set sail with your crew and take on the seas of Pirates. Live your life as a pirate on and adventure to search 
+                  for the worlds’ riches and secrets. Join our discord server to learn more about our adventures.
+                </p>
+              </div>
+            </div>
+<!-- ########################################## -->
+            <!-- ARK: Survival Evolved -->
+            <div class="row py-2">
+              <div class="col col-2 d-none d-sm-block">
+                <img class="img-fluid rounded-pill" src="https://i.pinimg.com/originals/00/fd/8a/00fd8af896bab591d677f03939f07e7c.png" alt="">
+              </div>
+              <div class="col col-10">
+                <h3>ARK: Survival Evolved</h3>
+                <p>
+                  Start your life in prehistoric times. Build your way up to the age of technology. Work together with your 
+                  friends or try your hand at lone survival.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-5 d-none d-lg-block" style="overflow: hidden;">
+          <div class="col col-lg-3 mt-3 d-none d-lg-block">
+            <img class="play-img" src="https://wickedrp.com/wp-content/uploads/2021/07/truck_bridge.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
 
+  </Section>
+
+  <Section id="staff">
+    <div class="container py-4">
+      <h1 class="text-center py-4">Meet the Owners</h1>
+      <div class="row">
+
+        <div class="card-col col-lg-4 col-md-6">
+          <div class="card shadow anim border-0">
+            <div class="row px-2">
+              <div class="col col-lg-6">
+                <div class="text-center">
+                  <img class="img-fluid py-2" src="https://wickedrp.com/wp-content/uploads/2021/01/Sharky.png" alt="">
+                  <div class="border-top">
+                    <h4 class="pt-1">Sharky</h4>
+                    <p class="text-muted">
+                      Co-Owner / Head of Development
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6">
+                <p class="py-2">
+                  With an extensive background in IT and server management, 
+                  Sharky is the Director of Development for the Wicked RP community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col col-lg-4 col-md-6">
+          <div class="card shadow anim border-0">
+            <div class="row px-2">
+              <div class="col col-lg-6">
+                <div class="text-center">
+                  <img class="img-fluid py-2" src="https://cdn.discordapp.com/avatars/155070772870774784/77b4420f5f4850ceb7cdf1cc281c3639.webp?size=256" alt="">
+                  <div class="border-top">
+                    <h4 class="pt-1">Jolk</h4>
+                    <p class="text-muted">
+                      Co-Owner / Head of Media Development
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6">
+                <p class="py-2">
+                  With a background of design and media creation, Jolk is the Director of Media Development for 
+                  the Wicked RP community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-col col-lg-4 col-md-6">
+          <div class="card shadow anim border-0">
+            <div class="row px-2">
+              <div class="col col-lg-6">
+                <div class="text-center">
+                  <img class="img-fluid py-2" src="https://wickedrp.com/wp-content/uploads/2021/06/NoahMain.png" alt="">
+                  <div class="border-top">
+                    <h4 class="pt-1">Noah</h4>
+                    <p class="text-muted">
+                      Co-Owner / Head of Community Engagement
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6">
+                <p class="py-2">
+                  According to <em>Barracuda</em><br><q>Noah Likes MEN</q>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <section id="community" >
+    <div class="container px-5 py-5 text-center border-bottom">
+      <img class="img-fluid" src="https://wickedrp.com/wp-content/uploads/2020/04/cropped-newLogo-1.png" alt="" style="width: 100px; height: 100px;">
+      <h1 class="title-heading pb-3">Join the community today!</h1>
+      <div class="mx-auto">
+        <p class="px-5 pb-3">
+          Want to have fun playing games with a great community? Come join Wicked and you’ll have a blast. We accept all kinds of people but have a 15+ age requirement to keep quality at a strong level.
+        </p>
+        <button type="button" class="btn btn-outline-light btn-lg shadow anim">
+          JOIN THE COMMUNITY
+        </button>
+      </div>
+    </div>
+    
+    <div class="container-fluid px-5 py-5">
+      <div class="row">
+
+        <div class="col-lg-3 px-4">
+          <div class="row">
+            <div class="col col-3 d-none d-sm-block pt-3">
+              <img class="img-fluid pt-3" src="http://destinyrp.net/wp-content/uploads/2020/09/fivem-logo.png" alt="">
+            </div>
+            <div class="col">
+              <h6>FiveM - Wicked Life RP</h6>
+              <p>
+                Live in GTA V with a realistic economy and plenty of stuff to do.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 px-4">
+          <div class="row">
+            <div class="col col-3 d-none d-sm-block pt-3">
+              <img class="img-fluid pt-3" src="https://freesvg.org/img/community.png" alt="">
+            </div>
+            <div class="col">
+              <h6>Community Engagement</h6>
+              <p>
+                We listen to the requests of our community to get resources added.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 px-4">
+          <div class="row">
+            <div class="col col-3 d-none d-sm-block pt-3">
+              <img class="img-fluid pt-3" src="https://www.pngix.com/pngfile/big/644-6444991_community-icon-vector-hd-png-download.png" alt="">
+            </div>
+            <div class="col">
+              <h6>Active Staff</h6>
+              <p>
+                Our staff works hard to build a quality community.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 px-4">
+          <div class="row">
+            <div class="col col-3 d-none d-sm-block pt-3">
+              <img class="img-fluid pt-3" src="https://lh3.googleusercontent.com/proxy/yopFmSKkUPpkNbUSNBkp41YVRCuRx0ATD1kSA4tp-wXZ3e6OUHkNGLCzRxiT-TA-qAOEB3vmRC_aFh0rkPlQAV0lPMDbv06dju1izNZlJwKliWIbrNsAIJByTtpb_3ic" alt="">
+            </div>
+            <div class="col">
+              <h6>Regular Updates</h6>
+              <p>
+                Active development to provide fresh features and fun events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </section>
+  
+  <Section id="footer" class="bg-dark text-white">
+    <footer class="py-1">
+      <ul class="nav justify-content-center border-bottom pb-1 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fab fa-twitter social-icon"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fab fa-facebook-f social-icon"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fab fa-instagram social-icon"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fab fa-youtube"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fab fa-discord"></i></a></li>
+      </ul>
+      <p class="text-center text-muted">Boss Designs | © 2021 Wicked RP | All Rights Reserved</p>
+    </footer>
+
+  </Section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQuery always above javascript-->
+  <script src="index.js"></script> <!-- last item on body element-->
 </body>
+
 </html>
